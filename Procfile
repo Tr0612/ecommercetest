@@ -1,1 +1,1 @@
-web: gunicorn ecommerce.wsgi
+web: bin/start-pgbouncer-stunnel gunicorn ecommerce.wsgi
