@@ -373,25 +373,7 @@
 					<div class="col">
 						<div class="destinations_container item_grid">
 
-                  {% for dest in dests %} 
-							 <!--Destination -->
-							<div class="destination item" style="object-fit:contain">
-								<div class="destination_image">
-                           <img src="{{ dest.productimage.url }}"> 
-                           
-								</div>
-								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">{{dest.productname}}</a></div>
-									<div class="destination_subtitle">
-										<p>{{dest.productdetails}}</p>
-									</div>
-									<div class="destination_price"><h1>₹{{dest.productprize}}</h1>
-										
-										<a href="{% url 'addtocart' dest.id %}" >Add to cart</a>
-									</div>
-								</div>
-                     </div>
-                   {% endfor%} 
+
 
 							 <!--Destination -->
 						<!--<div class="destination item">
